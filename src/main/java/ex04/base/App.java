@@ -1,5 +1,7 @@
 package ex04.base;
 
+import java.util.Scanner;
+
 /**
  * Exercise 4 - Mad Lib
  * Mad libs are a simple game where you create a story template with blanks for words. You, or another player, then construct a list of words and place them into the story, creating an often silly or funny story as a result.
@@ -28,6 +30,22 @@ package ex04.base;
 
 public class App {
 	public static void main(String[] args) {
-	
+		
+		Scanner in = new Scanner(System.in);
+		
+		System.out.print("Enter a noun: ");
+		String noun1 = in.nextLine();
+		
+		System.out.print("Enter a verb: ");
+		String verb1 = in.nextLine();
+		
+		System.out.println("Enter an adjective: ");
+		String adj1 = in.nextLine();
+		
+		System.out.println("Enter an adverb: ");
+		String adv1 = in.nextLine();
+		
+		System.out.printf("Do you %s your %s %s %s? That's hilarious!%n" , verb1, adj1, noun1, adv1);
+		
 	}
 }
